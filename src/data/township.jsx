@@ -5,20 +5,23 @@ import taganram from "../assets/Township/taganram.jpg";
 import Rli from "../assets/Township/Rli.jpg";
 import hopb from "../assets/Township/hopb.jpg";
 import shoppingcomplex from "../assets/Township/shoppingcomplex.jpg";
-import samudrika from "../assets/Township/samudrika.jpg";
+import samudrika from "../assets/Township/samudrika.jpeg";
 import temple from "../assets/Township/temple.jpg";
 import township from "../assets/Township/township.jpg";
-
+import sarovar from "../assets/Township/sarovar.jpg";
+import sagarika from "../assets/Township/Sagarika.jpeg";
+import HOSPITAL from "../assets/Township/HOSPITAL.jpeg";
+import SCHOOL from "../assets/Township/SCHOOL.jpeg";
 export const townshipData = {
 
   map: township,
   routeImages: {
-    school: "", 
-    hospital: "",
-    sarovarpark: "",
+    school: SCHOOL,
+    hospital: HOSPITAL,
+    sarovarpark: sarovar,
     ground: ground,
     saradaguesthouse: sarada,
-    sagarikaRecreationClub: "",
+    sagarikaRecreationClub: sagarika,
     rli: Rli,
     tarangamclub: taganram,
     shoppingcomplex: shoppingcomplex,
@@ -32,7 +35,7 @@ export const townshipData = {
     hospital: "Hospital",
     sarovarpark: "Sarovar Park",
     saradaguesthouse: "Sarada Guest House",
-    sanjeevaniguesthouse: "Sanjeevani Guest House",
+    samudrikaguesthouse: "Samudrika Guest House",
     sagarikaRecreationClub: "Sagarika Recreation Club",
     rli: "RLI",
     tarangamclub: "Tarangam Club",
@@ -47,7 +50,7 @@ export const townshipData = {
     hospital: "https://maps.app.goo.gl/hUcBynsEY6ZhuTjp6",
     sarovarpark: "https://maps.app.goo.gl/fY2MnQZGtwx7jcam6",
     saradaguesthouse: "https://maps.app.goo.gl/jF7A8kGwmitsQVsx9",
-    sanjeevaniguesthouse: "",
+    samudrikaguesthouse: "",
     sagarikaRecreationClub: "",
     rli: "https://maps.app.goo.gl/F3bFhN9g64V26jeQ9",
     tarangamclub: "https://maps.app.goo.gl/wfjVPBsCyU5ANV4c8",
@@ -63,7 +66,7 @@ export const townshipData = {
     sarovarpark: [],
     ground: [],
     saradaguesthouse: ["Canteen"],
-    sanjeevaniguesthouse: [],
+    samudrikaguesthouse: [],
     sagarikaguesthouse: [],
     sagarikaRecreationClub: [],
     rli: ["HR", "Training", "Admin"],

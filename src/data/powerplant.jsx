@@ -4,6 +4,10 @@ import Sankalp2 from "../assets/Plant/Sankalp2.jpg";
 import Switchyard from "../assets/Plant/SwitchYard.jpg";
 import YokogawaStores from "../assets/Plant/YokogawaStores.jpg";
 import mainPlantMap from "../assets/Plant/main-and-units.png";
+import sanchayastores from "../assets/Plant/sanchayastores.jpg";
+import solar from "../assets/Plant/solar.jpg";
+import safetypark from "../assets/Plant/safetypark.jpg";
+import coalbhavan from "../assets/Plant/coalbhavan.jpg";
 
 export const powerPlantData = {
 
@@ -17,11 +21,12 @@ export const powerPlantData = {
     switchyard: Switchyard,
     sankalp1: Sankalp1,
     sankalp2: Sankalp2,
-    chp: "",
-    solar: "",
-    safetypark: "",
+    chp: coalbhavan,
+    solar: solar,
+    safetypark: safetypark,
     ich: ICH,
-    YokogawaStores: YokogawaStores
+    YokogawaStores: YokogawaStores,
+    sanchayastores: sanchayastores
   },
 
   displayNames: {
@@ -38,6 +43,7 @@ export const powerPlantData = {
     ich: "Indian Coffee House",
     YokogawaStores: "Yokogawa Stores",
      safetypark: "Safety Park",
+    sanchayastores: "Sanchaya Stores"
   },
 
   googleMapsLinks: {
@@ -52,11 +58,11 @@ export const powerPlantData = {
     solar: "https://maps.app.goo.gl/qBCvqDiRuGRDqRhK6",
     ich: "https://maps.app.goo.gl/2ni4uBKWMEywQceX8",
     YokogawaStores: "https://maps.app.goo.gl/aniMuL7vH6cTvCGQA",
-    safetypark: "https://maps.app.goo.gl/9HydP8L7yLm3sJ5H9"
+    safetypark: "https://maps.app.goo.gl/9HydP8L7yLm3sJ5H9",
+    sanchayastores: "https://maps.app.goo.gl/vb6QprXDVinnRtTg6"
   },
 
   departments: {
-    switchyard: ["hidhf", "eid"],
     unit1: [ "Unit 1 Control Room"],
     unit2: [ "Unit 2 Control Room"],
     unit3: [ "Unit 3 Control Room"],

@@ -199,6 +199,12 @@ useEffect(() =>
     name: "Yokogawa Stores",
     icon: <FaBuilding />,
     departments: []
+  },
+  {
+    id: "sanchayastores",
+    name: "Sanchaya Stores",
+    icon: <FaBuilding />,
+    departments: []
   }
 ],
 
@@ -234,17 +240,12 @@ useEffect(() =>
     departments: []
   },
   {
-    id: "sanjeevaniguesthouse",
-    name: "Sanjeevani Guest House",
+    id: "samudrikaguesthouse",
+    name: "Samudrika Guest House",
     icon: <FaHotel />,
     departments: []
   },
-  {
-    id: "sagarikaguesthouse",
-    name: "Sagarika Guest House",
-    icon: <FaHotel />,
-    departments: []
-  },
+  
   {
     id: "rli",
     name: "RLI",
@@ -263,12 +264,7 @@ useEffect(() =>
     icon: <FaBuilding />,
     departments: []
   },
-  {
-    id: "samudrika",
-    name: "Samudrika",
-    icon: <FaHotel />,
-    departments: []
-  },
+
   {
     id: "temple",
     name: "Temple",
@@ -283,7 +279,7 @@ useEffect(() =>
   },
   {
     id: "hopb",
-    name: "HOPBuilding",
+    name: "HOP Building",
     icon: <FaBuilding />,
     departments: []
   }
