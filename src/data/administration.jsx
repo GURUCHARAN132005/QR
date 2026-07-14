@@ -38,11 +38,69 @@ export const administrationData = {
   },
 
   departments: {
-    admin1: ["Department 1", "Department 2", "Department 3"],
-    admin2: ["Department 1", "Department 2"],
+    admin1: {"Ground Floor": [
+    "CISF Office (Left)",
+    "DC CISF Waiting Area",
+    "DC CISF",
+    "CISF Office (Center)",
+    "Store Room",
+    "ICH Canteen Dining Area",
+    "ICH Canteen Kitchen Area",
+    "AC Plant",
+    "LT Switchgear Room"
+  ],
+
+  "First Floor": [
+    "Digitization Hall-2",
+    "Site C&M Hall",
+    "Vacant",
+    "Digitization Hall-1",
+    "UFSC-VPD",
+    "EMG Hall",
+    "AGM (EMG)",
+    "Pantry",
+    "AHU Room (Upper)",
+    "AHU Room (Lower)"
+  ],
+
+  "Second Floor": [
+    "Finance Hall-1",
+    "GM (FIN.)",
+    "NGEL Site Office",
+    "AGM (FIN.)",
+    "Finance Conference Hall",
+    "ICH Pantry",
+    "AHU Room (Upper)",
+    "AHU Room (Lower)"
+  ],
+
+  "Third Floor": [
+    "HR Hall-1",
+    "HR Hall-2",
+    "HR Hall-3",
+    "AGM (HR)",
+    "GM (TS)",
+    "Vacant",
+    "AGM (Vigilance)",
+    "AHU Room (Upper)",
+    "AHU Room (Lower)"
+  ],
+
+  "Fourth Floor": [
+    "HOP Section",
+    "HOP Section Waiting Area",
+    "AGM (TS)",
+    "P&S Hall",
+    "HOP Office",
+    "HOP Conference Hall",
+    "Red Site Office",
+    "ICH Pantry",
+    "AHU Room (Upper)",
+    "AHU Room (Lower)"
+  ]},
+      
     Documentation: ["FES","FCS"],
-    it: ["IT", "Communications"],
-    parking1: [],
-    parking2: []
+    it: ["IT", "Communications","Canteen"]
+
   }
 };

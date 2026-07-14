@@ -272,8 +272,8 @@ useEffect(() =>
     departments: []
   },
   {
-    id: "sagarikaRecreationClub",
-    name: "Sagarika Recreation Club",
+    id: "SAKUNTALAMAuditorium",
+    name: "SAKUNTALAMA Auditorium",
     icon: <FaBuilding />,
     departments: []
   },

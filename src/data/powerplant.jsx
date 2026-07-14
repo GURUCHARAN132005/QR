@@ -83,8 +83,7 @@ export const powerPlantData = {
     },
     chp: [],
     solar: [],
-    maingate: [],
-    ich: ["Canteen"],
-    YokogawaStores: []
+    ich: ["Canteen"]
+   
   }
 };

@@ -46,7 +46,7 @@ function MapView({
         <h1 className="navigation-title">NTPC Simhadri Navigation</h1>
        
         {displayNames[destination] && (
-          <p style={{ color: '#112ed6', fontSize: '1.2rem', marginBottom: '10px' }}>
+          <p className={`routing-to ${theme}`}>
             Routing to: <strong>{displayNames[destination]}</strong>
           </p>
         )}
@@ -83,7 +83,7 @@ function MapView({
             <div className="floors-container">
               {Object.entries(departments[destination]).map(([floorName, floorDepts], floorIndex) => (
                 <div key={floorIndex} className="floor-block" style={{ marginTop: '15px' }}>
-                  <h3 style={{ color: '#38bdf8', fontSize: '1.1rem', marginBottom: '8px' }}>{floorName}</h3>
+                  <h3 className={`floor-heading ${theme}`}>{floorName}</h3>
                   <ul className="department-list">
                     {floorDepts.map((dept, deptIndex) => (
                       <li key={deptIndex} style={{ animationDelay: `${0.4 + (floorIndex * 0.2) + (deptIndex * 0.1)}s` }}>

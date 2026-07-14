@@ -9,7 +9,7 @@ import samudrika from "../assets/Township/samudrika.jpeg";
 import temple from "../assets/Township/temple.jpg";
 import township from "../assets/Township/township.jpg";
 import sarovar from "../assets/Township/sarovar.jpg";
-import sagarika from "../assets/Township/Sagarika.jpeg";
+import SAKUNTALAMAuditorium from "../assets/Township/Sagarika.jpeg";
 import HOSPITAL from "../assets/Township/HOSPITAL.jpeg";
 import SCHOOL from "../assets/Township/SCHOOL.jpeg";
 export const townshipData = {
@@ -21,7 +21,7 @@ export const townshipData = {
     sarovarpark: sarovar,
     ground: ground,
     saradaguesthouse: sarada,
-    sagarikaRecreationClub: sagarika,
+    SAKUNTALAMAuditorium: SAKUNTALAMAuditorium,
     rli: Rli,
     tarangamclub: taganram,
     shoppingcomplex: shoppingcomplex,
@@ -36,7 +36,7 @@ export const townshipData = {
     sarovarpark: "Sarovar Park",
     saradaguesthouse: "Sarada Guest House",
     samudrikaguesthouse: "Samudrika Guest House",
-    sagarikaRecreationClub: "Sagarika Recreation Club",
+    SAKUNTALAMAuditorium: "SAKUNTALAMA Auditorium",
     rli: "RLI",
     tarangamclub: "Tarangam Club",
     shoppingcomplex: "Shopping Complex",
@@ -50,31 +50,19 @@ export const townshipData = {
     hospital: "https://maps.app.goo.gl/hUcBynsEY6ZhuTjp6",
     sarovarpark: "https://maps.app.goo.gl/fY2MnQZGtwx7jcam6",
     saradaguesthouse: "https://maps.app.goo.gl/jF7A8kGwmitsQVsx9",
-    samudrikaguesthouse: "",
-    sagarikaRecreationClub: "",
+    ground: "https://maps.app.goo.gl/TyTwjDprxqBsN4Q28",
+    samudrikaguesthouse: "https://maps.app.goo.gl/CyjXKBHkJLkpLVwV9",
+    SAKUNTALAMAuditorium: "https://maps.app.goo.gl/TSG6tqrmXZ4mNS1Z6",
     rli: "https://maps.app.goo.gl/F3bFhN9g64V26jeQ9",
     tarangamclub: "https://maps.app.goo.gl/wfjVPBsCyU5ANV4c8",
     shoppingcomplex: "https://maps.app.goo.gl/Tk3GEMqwmPCzRH9o9",
     samudrika: "https://maps.app.goo.gl/QQuJUwDYbKnNS4cK9",
     temple: "https://maps.app.goo.gl/fZrpFrvjE3uji3rW9",
-    hopb: ""
+    hopb: "https://maps.app.goo.gl/ESiUanw99dj9cHs36"
   },
 
   departments: {
-    school: [],
-    hospital: [],
-    sarovarpark: [],
-    ground: [],
     saradaguesthouse: ["Canteen"],
-    samudrikaguesthouse: [],
-    sagarikaguesthouse: [],
-    sagarikaRecreationClub: [],
     rli: ["HR", "Training", "Admin"],
-    tarangamclub: [],
-    shoppingcomplex: [],
-    samudrika: [],
-    temple: [],
-    hopb: []
   }
-
 };
