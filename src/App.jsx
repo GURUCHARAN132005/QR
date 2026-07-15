@@ -21,10 +21,11 @@ import {
   FaSearch,
   FaMicrophone,
   FaTimes,
-  FaHardHat
+  FaHardHat,
+  
 } from "react-icons/fa";
 
-
+import { MdSportsTennis } from "react-icons/md";
 
 function App() {
   const [isListening, setIsListening] = useState(false);
@@ -32,6 +33,7 @@ function App() {
   const [selectedArea, setSelectedArea] = useState("administration");
   const [searchTerm, setSearchTerm] = useState("");
   const [theme, setTheme] = useState("dark");
+  const [showCredits, setShowCredits] = useState(false);
   const startListening = () => {
 
   const SpeechRecognition =
@@ -227,12 +229,12 @@ useEffect(() =>
     icon: <FaTree />,
     departments: []
   },
-  {
-    id: "ground",
-    name: "Ground",
-    icon: <FaTree />,
-    departments: []
-  },
+ {
+  id: "ground",
+  name: "Ground",
+  icon: <MdSportsTennis />,
+  departments: []
+},
   {
     id: "saradaguesthouse",
     name: "Sarada Guest House",
@@ -282,6 +284,12 @@ useEffect(() =>
     name: "HOP Building",
     icon: <FaBuilding />,
     departments: []
+  },
+  {
+    id: "CISF",
+    name: "CISF",
+    icon: <FaBuilding />,
+    departments: []
   }
 ],
 
@@ -289,15 +297,12 @@ useEffect(() =>
   const currentAreaData = areas[selectedArea];
 
   const filteredLocations = locations[selectedArea].filter((loc) => {
-  // Search building name
   const buildingMatch = loc.name
     .toLowerCase()
     .includes(searchTerm.toLowerCase());
 
-  // Search departments inside the building
   let depts = currentAreaData.departments[loc.id];
   if (depts && !Array.isArray(depts)) {
-    // If it's an object with floors, extract all departments into a single flat array for searching
     depts = Object.values(depts).flat();
   }
 
@@ -320,6 +325,7 @@ useEffect(() =>
   );
 }
   return (
+    <>
     <div className={`app ${theme}`}>
       <div className="container">
         <button
@@ -342,7 +348,6 @@ useEffect(() =>
            
         </h1>
   
-  {/* Search Bar */}
 <div className="search-container">
   <div className="search-wrapper">
 
@@ -381,7 +386,6 @@ useEffect(() =>
   </div>
 </div>
 
-{/* Area Buttons */}
 <div className="area-selector">
 
     <button
@@ -431,8 +435,56 @@ useEffect(() =>
           ))}
         </div>
 
+        <div className="footer">
+          <p className="footer-text">AUTHOR</p>
+          <button
+            className="info-btn"
+            onClick={() => setShowCredits(true)}
+            title="About this project"
+          >
+            &#9432;
+          </button>
+        </div>
+
       </div>
     </div>
+
+    {showCredits && (
+      <div className="credits-overlay" onClick={() => setShowCredits(false)}>
+        <div className="credits-modal" onClick={(e) => e.stopPropagation()}>
+          <button className="credits-close" onClick={() => setShowCredits(false)}>✕</button>
+          <h2 className="credits-title">Project Team</h2>
+          <p className="credits-subtitle">NTPC Simhadri QR Navigation System</p>
+          <div className="credits-divider"></div>
+          <ul className="credits-list">
+            <li>
+              <span className="credits-role">Project Lead</span>
+              <span className="credits-name">Praneeth</span>
+            </li>
+            <li>
+              <span className="credits-role">Developer</span>
+              <span className="credits-name">Guru Charan</span>
+            </li>
+            <li>
+              <span className="credits-role">Tester </span>
+              <span className="credits-name">Ramanesh</span>
+            </li>
+            <li>
+              <span className="credits-role">Data &amp; Mapping</span>
+              <span className="credits-name">Sanket</span>
+            </li>
+             <li>
+              <span className="credits-role">Project Starting  </span>
+              <span className="credits-name">june 16TH - july 15TH</span>
+            </li>
+          </ul>
+          <div className="credits-divider"></div>
+          <p className="credits-footer">Developed at <strong>NTPC Limited, Simhadri</strong></p>
+          <p className="credits-footer">© 2025 NTPC Simhadri</p>
+        </div>
+      </div>
+    )}
+    </>
   );
 }
 

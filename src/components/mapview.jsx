@@ -10,8 +10,15 @@ function MapView({
     setTheme
 })  
 {
-  const currentArea = areas[area];
+const currentArea = areas?.[area];
 
+if (!currentArea) {
+  return (
+    <div className="map-page">
+      <h2>Area not found.</h2>
+    </div>
+  );
+}
   const {
     map: defaultMapImage,
     routeImages,
@@ -20,9 +27,8 @@ function MapView({
     departments,
   } = currentArea;
   
-  // Use the specific route image if it exists and is not empty, otherwise fallback to the default map
-  const displayImage = (routeImages && routeImages[destination]) ? routeImages[destination] : defaultMapImage;
-
+  const displayImage =
+  routeImages?.[destination] || defaultMapImage;
   return (
     <div className={`map-page ${theme}`}>
       <button className="back-btn" onClick={onBack}>
@@ -78,7 +84,6 @@ function MapView({
             </ul>
           )}
 
-          {/* If it's an object with floors (e.g. { "Ground Floor": ["Dept A"], "First Floor": ["Dept B"] }) */}
           {!Array.isArray(departments[destination]) && Object.keys(departments[destination]).length > 0 && (
             <div className="floors-container">
               {Object.entries(departments[destination]).map(([floorName, floorDepts], floorIndex) => (

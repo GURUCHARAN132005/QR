@@ -12,6 +12,7 @@ import sarovar from "../assets/Township/sarovar.jpg";
 import SAKUNTALAMAuditorium from "../assets/Township/Sagarika.jpeg";
 import HOSPITAL from "../assets/Township/HOSPITAL.jpeg";
 import SCHOOL from "../assets/Township/SCHOOL.jpeg";
+import CISF from "../assets/Township/CISF.jpeg";
 export const townshipData = {
 
   map: township,
@@ -27,7 +28,8 @@ export const townshipData = {
     shoppingcomplex: shoppingcomplex,
     samudrika: samudrika,
     temple: temple,
-    hopb: hopb
+    hopb: hopb,
+    CISF :CISF
   },
 
   displayNames: {
@@ -42,7 +44,8 @@ export const townshipData = {
     shoppingcomplex: "Shopping Complex",
     samudrika: "Samudrika",
     temple: "Temple",
-    hopb: "HOPBuilding"
+    hopb: "HOPBuilding",
+    CISF : "CISF"
   },
 
   googleMapsLinks: {
@@ -58,7 +61,8 @@ export const townshipData = {
     shoppingcomplex: "https://maps.app.goo.gl/Tk3GEMqwmPCzRH9o9",
     samudrika: "https://maps.app.goo.gl/QQuJUwDYbKnNS4cK9",
     temple: "https://maps.app.goo.gl/fZrpFrvjE3uji3rW9",
-    hopb: "https://maps.app.goo.gl/ESiUanw99dj9cHs36"
+    hopb: "https://maps.app.goo.gl/ESiUanw99dj9cHs36",
+    CISF :"https://maps.app.goo.gl/LWKARPJ7bwu9WqkA8"
   },
 
   departments: {
